@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+  <head>
+    <title>Ajax. Kurs od podstaw. Część pierwsza: Wprowadzenie. Przykład #4.2</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <style type="text/css">
+    .tresc {
+        width: 500px;
+        border: 5px solid red;
+        padding: 10px;
+        background: #e8fff1;        
+        margin: 20px;
+    }
+    .minitresc {
+        padding: 10px;
+		display: none;
+    }
+    a {
+        width: 60px;
+        font-family: "Verdana", monospace;
+        text-decoration: none;
+    }
+    </style>
+    <!-- W stylu tresc zmieniona została wartość width, border oraz margin,
+		 W stylu odnosnika (a) zmieniłem czcionkę na Verdana -->
+<script type="text/javascript">
+
+function expandCollapse(Id)
+{
+    var n = Id.parentNode.childNodes[2];
+    if (n.style.display == 'block') {
+        n.style.display = 'none';        
+        Id.innerHTML = '+';
+    } else {
+        n.style.display = 'block';                
+        n.innerHTML = 'Sebastian Rutkowski 125NCI_B...';
+        Id.innerHTML = '-';        
+    }
+}
+
+</script>    
+    
+    
+  </head>
+<body>
+
+<div class="tresc"><a href="#" onclick="expandCollapse(this);">+</a><span>Kto wykonał zadanie?</span><div></div></div>
+<div class="tresc"><a href="#" onclick="expandCollapse(this);">+</a><span>Kto wykonał zadanie?</span><div></div></div>
+<div class="tresc"><a href="#" onclick="expandCollapse(this);">+</a><span>Kto wykonał zadanie?</span><div></div></div>
+<div class="tresc"><a href="#" onclick="expandCollapse(this);">+</a><span>Kto wykonał zadanie?</span><div></div></div>
+<div class="tresc"><a href="#" onclick="expandCollapse(this);">+</a><span>Kto wykonał zadanie?</span><div></div></div>
+<div class="tresc"><a href="#" onclick="expandCollapse(this);">+</a><span>Kto wykonał zadanie?</span><div></div></div>
+<div class="tresc"><a href="#" onclick="expandCollapse(this);">+</a><span>Kto wykonał zadanie?</span><div></div></div>
+<div class="tresc"><a href="#" onclick="expandCollapse(this);">+</a><span>Kto wykonał zadanie?</span><div></div></div>
+<div class="tresc"><a href="#" onclick="expandCollapse(this);">+</a><span>Kto wykonał zadanie?</span><div></div></div>
+
+</body>
+</html>
